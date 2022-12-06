@@ -19,7 +19,7 @@ This may not work on other computers because of the code not working on other de
 1. So you have to go to your file browser. (File Explorer for Windows, Finder for Macs, but you need your file explorer.)
 2. Find your file you installed (It should have "HTML5 pages.zip" in it's name)
 3. Your .zip has to be extracted to be in normal format. Compress it by watching a tutorial on Youtube on how to compress .zip files to folders.
-4. Open the file called "OPENME.html" in your web browser. (Google chrome, Microsoft edge, whatever browser that supports HTML, CSS, and JavaScript.)
+4. Open the file called "index.html" in your web browser. (Google chrome, Microsoft edge, whatever browser that supports HTML, CSS, and JavaScript.)
 5. Watch it run.
 * If it didn't run, see if you did the steps correctly.
 ## Open source editing
@@ -43,8 +43,9 @@ When you have followed steps in the "Editing it" category, you can look at the f
 3. Code in your HTML file.
 ![Snip - youtube html](https://user-images.githubusercontent.com/108637656/199391181-21ffef33-2499-44e7-a979-c145befebf4f.png)
 4. Simply add your HTML file to the "pages & data" folder. If your HTML file includes content, put the content in the files too.
-5. To add your file in the "OPENME.html" page, Code this in the "OPENME.html" file. Replace the "example.html" with your file with the HTML format. and replace the example text with your custom text.
-![Snip - OPENME html](https://user-images.githubusercontent.com/108637656/199392122-a93b509f-0461-4175-884a-70497fd37c13.png)
+5. To add your file in the "index.html" page, Code this in the "index.html" file. Replace the "example.html" with your file with the HTML format. and replace the example text with your custom text.
+![Snip - untitled](https://user-images.githubusercontent.com/108637656/205811224-52c29901-7703-4602-84f4-763d30ce873d.png)
 6. Run the page using the "Running it" category. Watch your file in the page. Impressed? Bet you are!
-## Thanks
+## Thanks!
+
 Thanks for being here. You are looking at the guide of BagOfLays HTML Pages. Thanks for watching so you can understand.
