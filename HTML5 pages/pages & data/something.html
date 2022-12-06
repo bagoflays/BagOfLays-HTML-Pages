@@ -1,0 +1,13 @@
+<html>
+<title>Game</title>
+<h1 style='color:black;'>Try to get the head with your mouse pointer.</h1>
+<h1 style='color:black;'>Click anywhere in the game to add sound.</h1>
+   <img id="head" style="position:absolute;" onmouseenter="runAway()" src="whatthefuck.png">
+   <script>
+   	 function runAway(){
+   	 	document.getElementById("head").style.left=Math.random()*900+"px";
+   	 	document.getElementById("head").style.top=Math.random()*600+"px";
+   	 	new Audio("Scream-female.wav").play();
+  }
+  </script>
+</html>

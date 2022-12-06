@@ -1,0 +1,56 @@
+<html>
+<title>Game</title>
+<h1 style='color:white'>Use the up and down arrow keys to get heads.</h1>
+<link rel="shortcut icon" type="x-icon" href="icon.jpeg">
+<body style="background-color:#2980b9">
+   <img id="butterfly" style="position:absolute; top:500; width:100px;" src="butterfly2.png">
+   <img id="head" style="position:absolute; left:300; width:50px;" src="whatthefuck.png">
+   <p id="scoreTB" style="position:absolute; color:white; font-size:20px; font-family:Arial">Score: 0</p>
+</body>
+<script>
+   var score=0, angle=0, speed=4, butterflyX=0, butterflyY=500, gameTimer;
+   onkeydown=handleKeys;
+   gameTimer=window.setInterval(moveThings,20);
+   function setLeft(id,x){document.getElementById(id).style.left=x+"px";}
+   function setTop(id,y){document.getElementById(id).style.top=y+"px";}
+   function getLeft(id){return document.getElementById(id).offsetLeft;}
+   function getTop(id){return document.getElementById(id).offsetTop;}
+   function randomNumber(low,high){return(Math.floor(low+Math.random()*(1+high-low)));}
+function isOverlapping(ob1,ob2){
+return ((getLeft(ob1)+50>getLeft(ob2)) && (getLeft(ob1)<getLeft(ob2)+50) && (getTop(ob1)+50>getTop(ob2)) && (getTop(ob1)<getTop(ob2)+50));}
+function moveThings(){
+   butterflyX=butterflyY+speed*Math.cos(Math.PI*angle/180);
+   butterflyY=butterflyY+speed*Math.sin(Math.PI*angle/180);
+   if(butterflyX<-100){butterflyX=innerWidth;}
+   if(butterflyX>innerWidth){butterflyX=100;}
+   if(butterflyY<-100){butterflyY=innerHeight;}
+   if(butterflyY>innerHeight){butterflyY=100;}
+   setLeft("butterfly",butterflyX)
+   setTop("butterfly",butterflyY)
+   y=getTop("head");
+   setTop("head",y+1+score*0.1);
+   checkHit();
+   if(y>window.innerHeight){gameOver();}
+}
+function checkHit(){
+   if(isOverlapping("butterfly","head")){
+      score++;
+      document.getElementById("scoreTB").innerHTML="Score: "+score;
+      setTop("head",0);
+      setLeft("head",randomNumber(0,innerWidth-100));
+      new Audio("BalloonScratch.mp3").play();
+   }
+}
+function handleKeys(e){
+   if(e.keyCode==38){angle=angle-10;}
+   if(e.keyCode==40){angle=angle+10;}
+   document.getElementById("butterfly").style.webkitTransform = 'rotate('+angle+'deg)';
+}
+function gameOver(){
+   clearInterval(gameTimer);
+   if(confirm("Game over! press OK to get goffys.")==true){
+      location.reload();
+   }
+ }
+</script>
+</html>
