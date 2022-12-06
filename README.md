@@ -17,8 +17,8 @@ This may not work on other computers because of the code not working on other de
 2. You atleast need a web browser to run it. (Google chrome, Microsoft edge, whatever browser that supports HTML, CSS, and JavaScript.)
 ### Running it
 1. So you have to go to your file browser. (File Explorer for Windows, Finder for Macs, but you need your file explorer.)
-2. Find your file you installed (It should have "HTML5 pages.zip" in it's name)
-3. Your .zip has to be extracted to be in normal format. Compress it by watching a tutorial on Youtube on how to compress .zip files to folders.
+2. Find your file you installed (It should have "HTML5 pages" in it's name)
+3. Your folder has to be opened. Open it.
 4. Open the file called "index.html" in your web browser. (Google chrome, Microsoft edge, whatever browser that supports HTML, CSS, and JavaScript.)
 5. Watch it run.
 * If it didn't run, see if you did the steps correctly.
@@ -32,7 +32,7 @@ Anyways lets get to editing open source edition.
 ![open source download](https://user-images.githubusercontent.com/108637656/199389284-a5ce7728-d7cb-4251-9551-717d4e8da3cb.png)
 2. You atleast need a web browser to run it. (Google chrome, Microsoft edge, whatever browser that supports HTML, CSS, and JavaScript.)
 ### Editing it!
-After you have the .ZIP file, extract the file and then you will see a .zip file called "HTML5 pages.zip". Extract that too.
+After you have the .ZIP file, extract the file and then you will see a folder called "HTML5 pages". Open that.
 And then you have the files! But it's not all, you can edit it too.
 Go to the "pages & data" folder, and then you can add a file too.
 ### Open source files
